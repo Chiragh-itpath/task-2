@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.loading {
+  position: absolute;
+  inset: 0;
+  justify-content: center;
+  align-items: center;
+}
+.chart-container {
+  position: absolute;
+  inset: 0;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 20px;
+  height: 20px;
+}
+.logo {
+  width: 30px;
+  height: 30px;
+}
+tr td {
+  text-align: center;
+}
+tr td:nth-child(2) {
+  text-align: start;
+  cursor: pointer;
+}
+.border-bottom > span:nth-child(1) {
+  color: rgb(107, 114, 128);
+  font-size: .800rem;
+}
+.border-bottom span:nth-child(2) {
+  color: black;
+  font-size: 1rem;
+}
+.coin-name {
+  font-size: 26px;
+  font-weight: 700;
+}
+.coin-price {
+  font: 22px bolder;
+  color: black;
+}
+.text-secondary {
+    font-size: .7rem;
+    font-weight: 500;
+}
+.progress-bar {
+  background-image: linear-gradient(to right,rgb(252,211,103),rgb(175,215,127));
+}
+.progress {
+  width: calc(100% - 1rem) !important;
+}
+.min-max {
+  width: calc(100% - 1rem) !important;
+}
+.min-max span {
+  font-size: 13px;
+  font-weight: 500;
+}
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-primary);
+  --bs-tooltip-color: var(--bs-white);
+  --bs-tooltip-max-width: 400px;
+  --bs-tooltip-opacity: 0.8;
+}
+.custom-btn-tooltip {
+  --bs-tooltip-bg: var(--bs-dark);
+  --bs-tooltip-color: var(--bs-white);
+  --bs-tooltip-max-width: 400px;
+}
+.btc {
+  font-size: .875rem;
+  color: rgb(107,114,128);
+}
+.text-success {
+  color: #4eaf0a !important;
+}
+.text-danger {
+  color: #e15241!important;
+}
+.coin-symbol {
+  color:rgb(107, 114, 128)
+}
+.graph {
+  width: 150px;
+  height: 50px;
+}
+.wrapper {
+  display: flex;
+  column-gap: 10px;
+}
+.wrapper .dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #008ae6;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: animate 1s ease-in-out infinite alternate;
+}
+.wrapper .dot-small {
+  width: 10px;
+  height: 10px;
+}
+.dot:nth-child(1) {
+  animation-delay: -0.25s;
+}
+.dot:nth-child(2) {
+  background: #e60000;
+  animation-delay: -0.5s;
+}
+.dot:nth-child(3) {
+  background: #ffcc00;
+  animation-delay: -0.75s;
+}
+.dot:nth-child(4) {
+  background: #008800;
+  animation-delay: -1s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
